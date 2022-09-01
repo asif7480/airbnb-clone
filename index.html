@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelKaro</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <!-- Top Bar -->
+      <div class="top-bar">
+        <h3 class="intro">Introducing the new Travel Service</h3>
+        <p>Learn More</p>
+      </div>
+      <!-- End Top Bar -->
+      <!-- Navbar -->
+      <div class="navbar">
+        <div>
+          <h1>traverlkaro</h1>
+        </div>
+        <div class="search">
+          <form>
+            <div class="input-container">
+              <input type="text" placeholder="Search Poperties" />
+            </div>
+            <div>
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </div>
+        <div class="menu">
+          <ul class="nav-menu">
+            <li>
+              <a href="" class="nav-link">Listings</a>
+            </li>
+            <li>
+              <a href="" class="nav-link">Featured</a>
+            </li>
+            <li>
+              <a href="" class="nav-link">Popular</a>
+            </li>
+          </ul>
+          <div onclick="mobileMenu()" class="mobile">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+      <!-- End Nav Bar -->
+      <!-- Sort Bar -->
+      <div class="sort-bar">
+        <div>
+          <i class="fa-solid fa-house-chimney"></i>
+          <p>House</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-snowflake"></i>
+          <p>Artic</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-rocket"></i>
+          <p>Space</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-tree"></i>
+          <p>Trees</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-building"></i>
+          <p>City</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-campground"></i>
+          <p>Camping</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-umbrella-beach"></i>
+          <p>Beach</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-volleyball"></i>
+          <p>Games</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-house-chimney"></i>
+          <p>House</p>
+        </div>
+      </div>
+      <!-- End Sort Bar -->
+      <!-- Listings -->
+      <div class="listings">
+        <!-- Property Card -->
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFuc2lvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="/"
+          />
+          <div class="card-title">
+            <h4>City, State</h4>
+            <p>5.0 <i class="fa-solid fa-star"></i></p>
+            <p><span class="grey">Hosted by Reality Group, LLC</span></p>
+            <p><span class="grey">Jun 1 - 7</span></p>
+            <p>$749 night</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Listings -->
+    </div>
+
+    <script>
+      const menuBtn = document.querySelector(".mobile");
+      const navMenu = document.querySelector(".nav-menu");
+
+      const mobileMenu = () => {
+        menuBtn.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
