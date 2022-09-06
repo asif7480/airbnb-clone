@@ -18,7 +18,7 @@
     <!-- Container -->
     <div class="container">
       <!-- Top Bar -->
-      <div class="top-bar">
+      <div id="top" class="top-bar">
         <h3 class="intro">Introducing the new Travel Service</h3>
         <p>Learn More</p>
       </div>
@@ -41,13 +41,13 @@
         <div class="menu">
           <ul class="nav-menu">
             <li>
-              <a href="" class="nav-link">Listings</a>
+              <a onclick="closeMenu()" href="#listings" class="nav-link">Listings</a>
             </li>
             <li>
-              <a href="" class="nav-link">Featured</a>
+              <a onclick="closeMenu()" href="#featured" class="nav-link">Featured</a>
             </li>
             <li>
-              <a href="" class="nav-link">Popular</a>
+              <a onclick="closeMenu()" href="#popular" class="nav-link">Popular</a>
             </li>
           </ul>
           <div onclick="mobileMenu()" class="mobile">
@@ -97,7 +97,7 @@
       </div>
       <!-- End Sort Bar -->
       <!-- Listings -->
-      <div class="listings">
+      <div id="listings" class="listings">
         <!-- Property Card -->
         <div class="card">
           <img
@@ -261,7 +261,7 @@
       <!-- End Listings -->
 
       <!-- Featured -->
-      <div class="featured">
+      <div id="featured" class="featured">
         <div class="title">
           <h1>Featured</h1>
         </div>
@@ -299,7 +299,7 @@
         </div>
       </div>
       <!-- End Featured -->
-      <div class="featured">
+      <div id="popular" class="featured">
         <div class="title">
           <h1>Popular</h1>
         </div>
@@ -336,6 +336,29 @@
           </div>
         </div>
       </div>
+
+      <!-- Scroll to top -->
+      <div class="center">
+        <a href="#top">
+          <i class="fa-solid fa-chevron-up"></i>
+        </a>
+      </div>
+      <!-- footer -->
+      <div class="footer">
+        <ul class="left-menu">
+          <li><a href="">Air Travel</a></li>
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Destinations</a></li>
+        </ul>
+
+        <ul class="right-menu">
+          <li><a href="">Support</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <!-- End footer -->
+
       <!-- Container End   -->
     </div>
 
@@ -346,7 +369,11 @@
       const mobileMenu = () => {
         menuBtn.classList.toggle("active");
         navMenu.classList.toggle("active");
-      };
+      }
+
+      const closeMenu = () => {
+        navMenu.classList.toggle("active");
+      }
     </script>
   </body>
 </html>

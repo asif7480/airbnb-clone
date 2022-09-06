@@ -6,6 +6,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -125,6 +128,7 @@ a{
     justify-content: space-between;
     padding: 1rem 0;
     color: #5e5e5e;
+    cursor: pointer;
 }
 
 .sort-bar div{
@@ -204,6 +208,36 @@ img{
 }
 /* featured End */
 
+/* footer */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eeeeee;
+    padding: 1rem 0;
+}
+.left-menu, .right-menu{
+    display: flex;
+}
+
+.footer .left-menu li a{
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
+.footer .right-menu li a{
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.center{
+    display: flex;
+}
+
+.center a{
+    margin: auto;
+    font-size: 2rem;
+}
+/* footer end */
 @media screen and (max-width:940px){
     .top-bar{
         display: flex;
@@ -269,5 +303,9 @@ img{
     }
     .featured .main{
         grid-column: span 2;
+    }
+
+    .footer .left-menu, .right-menu{
+        flex-direction: column;
     }
 }
